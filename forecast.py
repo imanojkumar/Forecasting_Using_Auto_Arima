@@ -25,8 +25,8 @@ import gc
 # connect database
 def connect():
     try:
-        # conn = MySQLConnection(host='10.81.92.26', port=1436, user='root', password='Gr@phite#456$', database='IndexPrices')
-        conn = MySQLConnection(host='localhost', port=3306, user='root', password='Walmart@13M', database='IndexPrices')
+        # conn = MySQLConnection(host='localhost', port=3306, user='user', password='passwrod', database='IndexPrices')
+        conn = MySQLConnection(host='localhost', port=3306, user='root', password='password', database='IndexPrices')
         if conn.is_connected():
             print('Connected to MySQL server')
     except Error as error:
